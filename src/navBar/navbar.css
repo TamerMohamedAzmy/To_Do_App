@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+      background-color: rgb(223, 219, 219);
+    color: #000;
+    transition: 0.3s;
+}
+.dark{
+    background-color: #111;
+    color: white;
+}
+/* الحاوية الرئيسية */
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgb(58, 55, 55);
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* العنوان */
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* inputs */
+input[type="text"],
+input[type="search"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.2s;
+}
+
+input:focus {
+  border-color: #124378;
+}
+/* الأزرار */
+button {
+  padding: 8px 14px;
+  margin: 5px 5px 10px 0;
+  border: none;
+  border-radius: 8px;
+  background: #2a425b;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+/* فلتر الأزرار */
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+/* عنصر التودو */
+.updateall {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f1f3f5;
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.updateall p {
+  flex: 1;
+  word-break: break-word;
+  color: #000;
+}
+
+/* clear all */
+h4 {
+  margin-top: 15px;
+  background-color: red;
+  padding: 4px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+.enterdText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ========================= */
+/* 📱 Responsive */
+/* ========================= */
+
+/* موبايل صغير */
+@media (max-width: 480px) {
+  .container {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .updateall {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+.updateall button{
+  background-color: rgb(37, 84, 114);
+  margin: 0px 20px;
+  text-align: center;
+ padding: 5px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: #f4f2f2;
+}
+.updateall button:hover{
+  background-color:  rgb(32, 79, 120);
+}
+/* تابلت */
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+}
+/* ديسكتوب كبير */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 650px;
+  }
+}
