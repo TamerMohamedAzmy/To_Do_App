@@ -25,6 +25,7 @@ npm install
 npm start
 
 🌐 Live Demo
-https://courageous-zabaione-e64462.netlify.app
+https://todo-tamer.netlify.app/
 
 ⭐ If you like this project, give it a star!
+
